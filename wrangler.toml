@@ -1,0 +1,10 @@
+name = "mycv"
+main = "cv.html"
+compatibility_date = "2025-08-15"
+routes = [
+  { pattern = "hexaspace.tech/*", zone_name = "hexaspace.tech" }
+]
+# Nếu bạn dùng Workers Site (static hosting), thêm:
+# [site]
+# bucket = "./"
+# entry-point = "workers-site"
