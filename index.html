@@ -1,372 +1,691 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV - Phùng Đức Anh</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Segoe UI', 'Arial', sans-serif;
-            line-height: 1.5;
-            color: #222;
-            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
-        }
-
-        .cv-container {
-            max-width: 900px;
-            margin: 32px auto;
-            background: #fff;
-            display: flex;
-            min-height: 600px;
-            border-radius: 18px;
-            box-shadow: 0 8px 32px rgba(60, 60, 90, 0.12);
-            overflow: hidden;
-        }
-
-        .left-column {
-            width: 35%;
-            background: #f1f5f9;
-            padding: 32px 24px;
-            color: #222;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .right-column {
-            width: 65%;
-            background: #fff;
-            padding: 32px 32px;
-            color: #222;
-        }
-
-        .profile-photo {
-            width: 120px;
-            height: 150px;
-            background: #e2e8f0;
-            border: 3px solid #94a3b8;
-            margin: 0 auto 24px auto;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 13px;
-            text-align: center;
-            color: #64748b;
-            border-radius: 12px;
-            box-shadow: 0 2px 8px rgba(100, 116, 139, 0.08);
-        }
-
-        .contact-section {
-            margin-bottom: 28px;
-            width: 100%;
-        }
-
-        .contact-item {
-            display: flex;
-            align-items: center;
-            margin-bottom: 10px;
-            font-size: 13px;
-        }
-
-        .contact-icon {
-            width: 18px;
-            margin-right: 10px;
-            font-size: 15px;
-        }
-
-        .section-title {
-            font-size: 17px;
-            font-weight: bold;
-            color: #2563eb;
-            margin-bottom: 16px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .section-content {
-            margin-bottom: 28px;
-            width: 100%;
-        }
-
-        .skill-item, .language-item {
-            font-size: 13px;
-            margin-bottom: 6px;
-        }
-
-        .name-section {
-            margin-bottom: 28px;
-        }
-
-        .main-name {
-            font-size: 28px;
-            font-weight: bold;
-            color: #1e293b;
-            text-transform: uppercase;
-            margin-bottom: 12px;
-            letter-spacing: 1px;
-        }
-
-        .education-info {
-            font-size: 13px;
-            margin-bottom: 18px;
-        }
-
-        .education-info .university {
-            font-weight: bold;
-            margin-bottom: 3px;
-        }
-
-        .education-info .major {
-            margin-bottom: 3px;
-        }
-
-        .education-info .period {
-            color: #64748b;
-            margin-bottom: 9px;
-        }
-
-        .experience-item {
-            margin-bottom: 22px;
-            border-left: 3px solid #2563eb;
-            padding-left: 18px;
-            background: #f8fafc;
-            border-radius: 8px;
-            box-shadow: 0 1px 4px rgba(37, 99, 235, 0.04);
-        }
-
-        .experience-date {
-            font-size: 12px;
-            color: #64748b;
-            margin-bottom: 6px;
-        }
-
-        .company-name {
-            font-size: 15px;
-            font-weight: bold;
-            margin-bottom: 6px;
-            color: #2563eb;
-        }
-
-        .position {
-            font-size: 13px;
-            font-style: italic;
-            margin-bottom: 9px;
-        }
-
-        .job-description {
-            font-size: 12px;
-            line-height: 1.4;
-        }
-
-        .job-description ul {
-            margin: 7px 0;
-            padding-left: 18px;
-        }
-
-        .job-description li {
-            margin-bottom: 4px;
-        }
-
-        .activity-item {
-            margin-bottom: 17px;
-        }
-
-        .activity-title {
-            font-size: 13px;
-            font-weight: bold;
-            margin-bottom: 4px;
-        }
-
-        .activity-description {
-            font-size: 12px;
-            line-height: 1.4;
-        }
-
-        .interests-list {
-            font-size: 12px;
-            line-height: 1.5;
-        }
-
-        .interests-list li {
-            margin-bottom: 4px;
-            list-style: disc;
-            margin-left: 18px;
-        }
-
-        @media (max-width: 900px) {
-            .cv-container {
-                flex-direction: column;
-                max-width: 98vw;
-                min-height: unset;
-            }
-            .left-column, .right-column {
-                width: 100%;
-                padding: 24px 12px;
-            }
-            .right-column {
-                padding-top: 0;
-            }
-        }
-
-        @media print {
-            body {
-                background: white;
-            }
-            .cv-container {
-                margin: 0;
-                box-shadow: none;
-            }
-        }
-    </style>
+    <title>Phung Duc Anh | Cybersecurity & AIOps Portfolio</title>
+    <meta name="description" content="Portfolio of Phung Duc Anh - Information Technology Student specializing in Cybersecurity, AIOps/SecOps, Malware Analysis, and Security Monitoring.">
+    <meta name="keywords" content="cybersecurity, information security, AIOps, SecOps, SOC, portfolio, Phung Duc Anh, malware analysis">
+    <meta name="author" content="Phung Duc Anh">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="cv-container">
-        <!-- Left Column -->
-        <div class="left-column">
-            <div class="profile-photo">
-                [Ảnh của bạn]<br>
-                120x150px
-            </div>
+    <!-- Cursor glow effect -->
+    <div class="cursor-glow" id="cursorGlow"></div>
 
-            <div class="contact-section">
-                <div class="contact-item">
-                    <span class="contact-icon">📱</span>
-                    <span>0393552209</span>
+    <!-- Matrix rain canvas -->
+    <canvas id="matrixCanvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>
+                <span class="logo-text">DucAnh</span>
+                <span class="logo-slash">/</span>
+                <span class="logo-bracket">&gt;</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-grid-bg"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                <span>Ready for SOC / SEC-OPS / DEV</span>
+            </div>
+            <div class="hero-glitch-wrapper">
+                <h1 class="hero-name" data-text="PHUNG DUC ANH">PHUNG DUC ANH</h1>
+            </div>
+            <div class="hero-typewriter">
+                <span class="typewriter-prefix">&gt;&nbsp;</span>
+                <span class="typewriter-text" id="typewriterText"></span>
+                <span class="typewriter-cursor">_</span>
+            </div>
+            <p class="hero-description">
+                Information Technology student specializing in <span class="highlight-accent">Cybersecurity</span> & 
+                <span class="highlight-accent">AIOps/SecOps</span>. Strong foundation in <span class="highlight">SOC monitoring</span>, 
+                <span class="highlight">malware analysis</span>, <span class="highlight">computer networking</span>, and 
+                <span class="highlight">backend engineering</span>.
+            </p>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-count="3.14">0</span>
+                    <span class="stat-label">GPA / 4.00</span>
                 </div>
-                <div class="contact-item">
-                    <span class="contact-icon">✉️</span>
-                    <span>phungducanh2k5@email.com</span>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="4">0</span>
+                    <span class="stat-label">Months Internship</span>
                 </div>
-                <div class="contact-item">
-                    <span class="contact-icon">🔗</span>
-                    <a href="https://www.linkedin.com/in/%C4%91%E1%BB%A9c-anh-ph%C3%B9ng-bab223359?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener">LinkedIn: Đức Anh Phùng</a>
-                </div>
-                <div class="contact-item">
-                    <span class="contact-icon">📍</span>
-                    <span>Hà Nội - Việt Nam</span>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="4">0</span>
+                    <span class="stat-label">Projects</span>
                 </div>
             </div>
+            <div class="hero-actions">
+                <a href="#projects" class="btn btn-primary">
+                    <i class="fas fa-rocket"></i>
+                    <span>Explore Projects</span>
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    <i class="fas fa-terminal"></i>
+                    <span>Contact Info</span>
+                </a>
+                <a href="https://github.com/DucAnhSCY" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub Profile</span>
+                </a>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <div class="scroll-line"></div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
 
-            <div class="section-content">
-                <h3 class="section-title">Mục tiêu nghề nghiệp</h3>
-                <p style="font-size: 11px; line-height: 1.3;">
-                    Hướng tới nghiên cứu mã độc, phát triển kỹ năng phân tích, nhận diện và phòng chống các mối đe dọa an ninh mạng. Mong muốn đóng góp vào lĩnh vực bảo mật thông tin và học hỏi trong môi trường chuyên nghiệp.
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;about&gt;</span>
+                <h2 class="section-title">Who Am I</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-card about-intro">
+                    <div class="terminal-header">
+                        <div class="terminal-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <span class="terminal-title">about_me.sh</span>
+                    </div>
+                    <div class="terminal-body">
+                        <div class="terminal-line">
+                            <span class="prompt">$</span>
+                            <span class="command">cat introduction.txt</span>
+                        </div>
+                        <p class="terminal-output">
+                            Information Technology student at <span class="text-accent">CMC University</span> 
+                            specializing in <span class="text-accent">Cybersecurity & AIOps/SecOps</span>. Strong foundation in 
+                            SOC monitoring, malware behavior analysis, computer networking, and backend system development. 
+                            Interned at <span class="text-accent">CMC Cyber Security</span>.
+                        </p>
+                        <div class="terminal-line">
+                            <span class="prompt">$</span>
+                            <span class="command">echo $GOAL</span>
+                        </div>
+                        <p class="terminal-output">
+                            Building a long-term career in Cybersecurity — protecting systems, detecting threats, 
+                            and making the digital world safer.
+                        </p>
+                        <div class="terminal-line">
+                            <span class="prompt">$</span>
+                            <span class="cursor-blink">█</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-info-cards">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <span class="info-label">Location</span>
+                            <span class="info-value">Hanoi, Vietnam</span>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="info-content">
+                            <span class="info-label">University</span>
+                            <span class="info-value">CMC University</span>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-shield-halved"></i>
+                        </div>
+                        <div class="info-content">
+                            <span class="info-label">Focus</span>
+                            <span class="info-value">Cybersecurity & AIOps</span>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-language"></i>
+                        </div>
+                        <div class="info-content">
+                            <span class="info-label">English</span>
+                            <span class="info-value">B2 Level</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-footer-tag">&lt;/about&gt;</div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section section-alt" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;experience&gt;</span>
+                <h2 class="section-title">Work Experience</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-marker">
+                        <div class="marker-dot">
+                            <i class="fas fa-shield-virus"></i>
+                        </div>
+                        <div class="marker-line"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-card">
+                            <div class="card-header-bar">
+                                <span class="company-badge">
+                                    <i class="fas fa-building"></i>
+                                    CMC Cyber Security (CMC CS)
+                                </span>
+                                <span class="date-badge">
+                                    <i class="fas fa-calendar"></i>
+                                    2024 - 2025 · 4 months
+                                </span>
+                            </div>
+                            <h3 class="timeline-role">Security Intern</h3>
+                            <ul class="timeline-details">
+                                <li>
+                                    <i class="fas fa-bug"></i>
+                                    <span>Researched malware behavior on <strong>Windows/Linux</strong> systems</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-microscope"></i>
+                                    <span>Analyzed malware at the <strong>Service and Process</strong> levels</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-search"></i>
+                                    <span>Studied detection methods using <strong>log, process, and service monitoring</strong></span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-network-wired"></i>
+                                    <span>Built detection and alert models for <strong>abnormal network behavior</strong></span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-satellite-dish"></i>
+                                    <span>Learned enterprise <strong>Security Monitoring</strong> and <strong>Incident Response</strong> workflows</span>
+                                </li>
+                            </ul>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Malware Analysis</span>
+                                <span class="tech-tag">SIEM</span>
+                                <span class="tech-tag">Log Analysis</span>
+                                <span class="tech-tag">Incident Response</span>
+                                <span class="tech-tag">Network Security</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-footer-tag">&lt;/experience&gt;</div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;projects&gt;</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 0: AIOps Platform (FEATURED) -->
+                <div class="project-card featured" data-aos="fade-up">
+                    <div class="project-glow"></div>
+                    <div class="project-featured-tag">NEW FEATURED</div>
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-shield-virus"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/DucAnhSCY/aiops-platform.git" target="_blank" rel="noopener noreferrer" class="project-link" title="View on GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">AIOps Platform</h3>
+                    <p class="project-subtitle">Intelligent Log & SecOps Monitoring</p>
+                    <p class="project-desc">
+                        Intelligent Operations & Security platform powered by AI. Performs real-time 
+                        system log collection, automated anomaly detection (SecOps/AIOps), and alerting 
+                        to optimize enterprise infrastructure observability.
+                    </p>
+                    <div class="project-role">
+                        <i class="fas fa-robot"></i>
+                        <span>Full-Stack Security Engineer</span>
+                    </div>
+                    <ul class="project-features">
+                        <li>Real-time log collection & anomaly detection</li>
+                        <li>AI-powered SecOps alerting system</li>
+                    </ul>
+                    <div class="project-tech-tags">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">AIOps</span>
+                        <span class="tech-tag">Anomaly Detection</span>
+                        <span class="tech-tag">Docker</span>
+                        <span class="tech-tag">SecOps</span>
+                    </div>
+                    <div class="project-period">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>2025</span>
+                    </div>
+                </div>
+
+                <!-- Project 1: Cinema -->
+                <div class="project-card" data-aos="fade-up">
+                    <div class="project-glow"></div>
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-film"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/DucAnhSCY/CinemaProject" target="_blank" rel="noopener noreferrer" class="project-link" title="View on GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Cinema Project</h3>
+                    <p class="project-subtitle">Movie Ticket Booking Website</p>
+                    <p class="project-desc">
+                        Full-stack movie ticket booking platform with RESTful API backend, 
+                        optimized database design, and robust security implementation.
+                    </p>
+                    <div class="project-role">
+                        <i class="fas fa-code"></i>
+                        <span>Backend Developer</span>
+                    </div>
+                    <ul class="project-features">
+                        <li>Designed database & built RESTful APIs</li>
+                        <li>Optimized performance & security</li>
+                    </ul>
+                    <div class="project-period">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>2024 - 2025</span>
+                    </div>
+                </div>
+
+                <!-- Project 2: Match3 Game -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-glow"></div>
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-gamepad"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/junirst/match3" target="_blank" rel="noopener noreferrer" class="project-link" title="View on GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Match3 Game</h3>
+                    <p class="project-subtitle">Flutter Mobile Game</p>
+                    <p class="project-desc">
+                        Backend system for a Match-3 mobile game built with Flutter, 
+                        featuring game logic APIs and optimized player data management.
+                    </p>
+                    <div class="project-role">
+                        <i class="fas fa-server"></i>
+                        <span>Backend Developer (API & Database)</span>
+                    </div>
+                    <ul class="project-features">
+                        <li>Game database & logic APIs</li>
+                        <li>Player data & server optimization</li>
+                    </ul>
+                    <div class="project-period">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>2024 - 2025</span>
+                    </div>
+                </div>
+
+                <!-- Project 3: Deep Learning -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-glow"></div>
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://drive.google.com/file/d/1NgOeDA4dGwvMhMbulhux89qzG0QtROwOL/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="project-link" title="View Documentation">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Fruit Recognition</h3>
+                    <p class="project-subtitle">Deep Learning Research</p>
+                    <p class="project-desc">
+                        Research project developing a Deep Learning model for fruit recognition 
+                        using Computer Vision and advanced Machine Learning techniques.
+                    </p>
+                    <div class="project-role">
+                        <i class="fas fa-flask"></i>
+                        <span>ML Researcher</span>
+                    </div>
+                    <ul class="project-features">
+                        <li>Computer Vision & ML application</li>
+                        <li>Image data processing & analysis</li>
+                    </ul>
+                    <div class="project-period">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>2023 - 2024</span>
+                    </div>
+                </div>
+            </div>
+            <div class="section-footer-tag">&lt;/projects&gt;</div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section section-alt" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;skills&gt;</span>
+                <h2 class="section-title">Technical Arsenal</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-grid">
+                <!-- Cybersecurity -->
+                <div class="skill-category" data-aos="fade-up">
+                    <div class="skill-category-header">
+                        <div class="skill-icon-wrapper cyber">
+                            <i class="fas fa-shield-halved"></i>
+                        </div>
+                        <h3>Cybersecurity & SOC</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fas fa-eye"></i>
+                            <span>Security Monitoring</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-file-alt"></i>
+                            <span>Log Analysis</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-bug"></i>
+                            <span>Malware Analysis (Basic)</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-fire-extinguisher"></i>
+                            <span>Incident Response</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-network-wired"></i>
+                            <span>Network Anomaly Detection</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-robot"></i>
+                            <span>AIOps / SecOps</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Programming -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                    <div class="skill-category-header">
+                        <div class="skill-icon-wrapper code">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Programming</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-code"></i>
+                            <span>C / C++</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-hashtag"></i>
+                            <span>C#</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-java"></i>
+                            <span>Java</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>SQL Server</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-cogs"></i>
+                            <span>RESTful APIs</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Systems & Networking -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                    <div class="skill-category-header">
+                        <div class="skill-icon-wrapper sys">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h3>Systems & Networking</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-linux"></i>
+                            <span>Linux OS</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-windows"></i>
+                            <span>Windows Internals</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-network-wired"></i>
+                            <span>TCP/IP Protocols</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-globe"></i>
+                            <span>Network Fundamentals</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-git-alt"></i>
+                            <span>Git & GitHub</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-docker"></i>
+                            <span>Docker Containers</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-footer-tag">&lt;/skills&gt;</div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section" id="education">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;education&gt;</span>
+                <h2 class="section-title">Education</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="education-grid" style="max-width: 600px;">
+                <div class="edu-card" data-aos="fade-up">
+                    <div class="edu-year">2023 - 2026</div>
+                    <div class="edu-content">
+                        <div class="edu-icon">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <h3 class="edu-school">CMC University</h3>
+                        <p class="edu-faculty">Faculty of Information Technology</p>
+                        <p class="edu-desc" style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 16px; line-height: 1.7;">Comprehensive curriculum covering computer networks, operating systems, data structures, application security, and information assurance principles.</p>
+                        <div class="edu-gpa">
+                            <span class="gpa-label">GPA</span>
+                            <div class="gpa-bar">
+                                <div class="gpa-fill" data-gpa="79"></div>
+                            </div>
+                            <span class="gpa-value">3.14 / 4.00</span>
+                        </div>
+                        <div class="edu-tags" style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px;">
+                            <span class="tech-tag" style="font-family: var(--font-mono); font-size: 0.75rem; padding: 4px 10px; background: rgba(123,47,247,0.1); border: 1px solid rgba(123,47,247,0.2); color: var(--accent-purple, #7b2ff7); border-radius: 6px;">Information Security</span>
+                            <span class="tech-tag" style="font-family: var(--font-mono); font-size: 0.75rem; padding: 4px 10px; background: rgba(123,47,247,0.1); border: 1px solid rgba(123,47,247,0.2); color: var(--accent-purple, #7b2ff7); border-radius: 6px;">Network Architecture</span>
+                            <span class="tech-tag" style="font-family: var(--font-mono); font-size: 0.75rem; padding: 4px 10px; background: rgba(123,47,247,0.1); border: 1px solid rgba(123,47,247,0.2); color: var(--accent-purple, #7b2ff7); border-radius: 6px;">Operating Systems</span>
+                            <span class="tech-tag" style="font-family: var(--font-mono); font-size: 0.75rem; padding: 4px 10px; background: rgba(123,47,247,0.1); border: 1px solid rgba(123,47,247,0.2); color: var(--accent-purple, #7b2ff7); border-radius: 6px;">Data Structures</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-footer-tag">&lt;/education&gt;</div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="section section-alt" id="certifications">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;certifications&gt;</span>
+                <h2 class="section-title">Certifications & Languages</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="cert-showcase" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; max-width: 900px; margin: 0 auto;">
+                <div class="cert-card" data-aos="fade-up">
+                    <div class="cert-glow"></div>
+                    <div class="cert-badge-icon">
+                        <i class="fas fa-shield-halved"></i>
+                    </div>
+                    <div class="cert-info">
+                        <h3 class="cert-name">Google Cybersecurity Professional Certificate</h3>
+                        <p class="cert-issuer">
+                            <i class="fab fa-google"></i>
+                            Coursera & Google
+                        </p>
+                        <p class="cert-date">
+                            <i class="fas fa-calendar-check"></i>
+                            Issued: 10 JUN 2026
+                        </p>
+                        <a href="https://www.credly.com/go/j8mla7KU" target="_blank" rel="noopener noreferrer" class="cert-verify">
+                            <i class="fas fa-external-link-alt"></i>
+                            Verify Certificate
+                        </a>
+                    </div>
+                </div>
+                <div class="cert-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="cert-glow"></div>
+                    <div class="cert-badge-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <div class="cert-info">
+                        <h3 class="cert-name">English B2 (CEFR B2 Level)</h3>
+                        <p class="cert-issuer">
+                            <i class="fas fa-language"></i>
+                            Language Proficiency
+                        </p>
+                        <p class="cert-date">
+                            <i class="fas fa-comment-dots"></i>
+                            Proficient in technical security documentation, report writing, and professional collaboration.
+                        </p>
+                        <div class="cert-verify" style="cursor: default; background: rgba(0, 180, 216, 0.08); border-color: rgba(0, 180, 216, 0.3); color: var(--accent-blue, #00b4d8);">
+                            <i class="fas fa-check-circle"></i>
+                            B2 Proficiency
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-footer-tag">&lt;/certifications&gt;</div>
+        </div>
+    </section>
+
+
+
+    <!-- Contact Section -->
+    <section class="section section-alt" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;contact&gt;</span>
+                <h2 class="section-title">Let's Connect</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-content">
+                <p class="contact-text">
+                    Open to internship and full-time opportunities in Information Security 
+                    (SOC Analyst, Malware Analysis, SecOps) or Backend Software Engineering.
                 </p>
+                <div class="contact-links">
+                    <a href="tel:0393552209" class="contact-card">
+                        <i class="fas fa-phone"></i>
+                        <span class="contact-platform">Phone</span>
+                        <span class="contact-handle">0393 552 209</span>
+                    </a>
+                    <a href="mailto:phungducanh2k5@email.com" class="contact-card">
+                        <i class="fas fa-envelope"></i>
+                        <span class="contact-platform">Email</span>
+                        <span class="contact-handle">phungducanh2k5@email.com</span>
+                    </a>
+                    <a href="https://github.com/DucAnhSCY" target="_blank" rel="noopener noreferrer" class="contact-card">
+                        <i class="fab fa-github"></i>
+                        <span class="contact-platform">GitHub</span>
+                        <span class="contact-handle">github.com/DucAnhSCY</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/%C4%91%E1%BB%A9c-anh-ph%C3%B9ng-bab223359/" target="_blank" rel="noopener noreferrer" class="contact-card">
+                        <i class="fab fa-linkedin"></i>
+                        <span class="contact-platform">LinkedIn</span>
+                        <span class="contact-handle">Đức Anh Phùng</span>
+                    </a>
+                </div>
             </div>
+            <div class="section-footer-tag">&lt;/contact&gt;</div>
+        </div>
+    </section>
 
-            <div class="section-content">
-                <h3 class="section-title">Kỹ năng</h3>
-                <div class="skill-item"><strong>Lập trình:</strong></div>
-                <div class="skill-item">• C Programming</div>
-                <div class="skill-item">• C#</div>
-                <div class="skill-item">• Java</div>
-                <div class="skill-item">• SQL Server</div>
-                <br>
-                <div class="skill-item"><strong>Web & Mobile:</strong></div>
-                <div class="skill-item">• HTML, CSS</div>
-                <div class="skill-item">• Flutter</div>
-                <br>
-                <div class="skill-item"><strong>Công cụ:</strong></div>
-                <div class="skill-item">• Git</div>
-            </div>
-
-            <div class="section-content">
-                <h3 class="section-title">Ngôn ngữ</h3>
-                <div class="language-item">Tiếng Việt: Bản ngữ</div>
-                <div class="language-item">Tiếng Anh: B2</div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-bracket">&lt;</span>
+                    <span class="logo-text">DucAnh</span>
+                    <span class="logo-slash">/</span>
+                    <span class="logo-bracket">&gt;</span>
+                </div>
+                <p class="footer-text">
+                    &copy; 2026 Phùng Đức Anh &bull; Cybersecurity & AIOps Portfolio
+                </p>
+                <p class="footer-quote">Built for high performance, security and SOC operations.</p>
             </div>
         </div>
+    </footer>
 
-        <!-- Right Column -->
-        <div class="right-column">
-            <div class="name-section">
-                <h1 class="main-name">Phùng Đức Anh</h1>
-                
-                <div class="education-info">
-                    <div style="display: flex; align-items: center; margin-bottom: 10px;">
-                        <span style="margin-right: 8px;">🎓</span>
-                        <strong>Học vấn</strong>
-                    </div>
-                    <div class="university">Đại học CMC</div>
-                    <div class="major">Khoa Công nghệ thông tin</div>
-                    <div class="period">2023-2026</div>
-                    
-                    <div class="university">THPT Sóc Sơn</div>
-                    <div class="period">2020-2023</div>
-                    <div style="font-size: 11px;">Tốt nghiệp loại Giỏi</div>
-                </div>
-            </div>
-
-            <div style="margin-bottom: 25px;">
-                <div style="display: flex; align-items: center; margin-bottom: 15px;">
-                    <span style="margin-right: 8px;">💼</span>
-                    <h2 class="section-title" style="margin: 0;">Kinh nghiệm</h2>
-                </div>
-
-                <div class="experience-item">
-                    <div class="experience-date">2024</div>
-                    <div class="company-name">Dự án bài tập lớn: Deep Learning - Fruit Recognition</div>
-                    <div class="position">Nghiên cứu sinh (nghiên cứu sâu về nhận biết Fruit)</div>
-                    <div class="job-description">
-                        <ul>
-                            <li>Nghiên cứu và phát triển mô hình Deep Learning nhận biết độ tươi trái cây</li>
-                            <li>Ứng dụng Computer Vision và Machine Learning</li>
-                            <li>Xử lý và phân tích dữ liệu hình ảnh</li>
-                            <li>Đường dẫn dự án: <a href="https://drive.google.com/file/d/1NgOeDA4dGwMhMbuhlux89gzGGQtR0wOL/view?usp=drive_link" target="_blank">Xem chi tiết</a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="experience-item">
-                    <div class="experience-date">2024</div>
-                    <div class="company-name">Dự án bài tập lớn: Cinema Project - Website đặt vé phim</div>
-                    <div class="position">Backend Developer</div>
-                    <div class="job-description">
-                        <ul>
-                            <li>Phát triển hệ thống backend cho website đặt vé xem phim</li>
-                            <li>Thiết kế cơ sở dữ liệu và xây dựng API RESTful</li>
-                            <li>Tối ưu hóa hiệu suất và bảo mật ứng dụng</li>
-                            <li>Đường dẫn dự án: <a href="https://github.com/DucAnhSCY/CinemaProject" target="_blank">Xem chi tiết</a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="experience-item">
-                    <div class="experience-date">2024</div>
-                    <div class="company-name">Dự án bài tập lớn: Match3 Game - Flutter Mobile Game</div>
-                    <div class="position">Backend Developer (API & Database)</div>
-                    <div class="job-description">
-                        <ul>
-                            <li>Phát triển backend cho game mobile Match-3</li>
-                            <li>Thiết kế cơ sở dữ liệu game và API xử lý logic</li>
-                            <li>Quản lý dữ liệu người chơi và tối ưu hiệu suất server</li>
-                            <li>Đường dẫn dự án: <a href="https://github.com/junirst/match3" target="_blank">Xem chi tiết</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div>
-                <div style="display: flex; align-items: center; margin-bottom: 15px;">
-                    <span style="margin-right: 8px;">⭐</span>
-                    <h2 class="section-title" style="margin: 0;">Sở thích</h2>
-                </div>
-                
-                <ul class="interests-list">
-                    <li>Nghiên cứu công nghệ mới và xu hướng lập trình</li>
-                    <li>Tham gia cộng đồng developer online</li>
-                    <li>Đọc sách về công nghệ và phát triển bản thân</li>
-                    <li>Chơi game và phân tích game mechanics</li>
-                    <li>Thể thao: bóng đá, bơi, gym</li>
-                </ul>
-            </div>
-        </div>
-    </div>
+    <script src="script.js"></script>
 </body>
 </html>
