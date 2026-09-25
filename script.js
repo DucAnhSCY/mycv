@@ -229,10 +229,6 @@
       scheduleScrollUpdate();
     });
 
-    document
-      .getElementById("printResume")
-      ?.addEventListener("click", () => window.print());
-
     const currentYear = document.getElementById("currentYear");
     if (currentYear) currentYear.textContent = String(new Date().getFullYear());
   }

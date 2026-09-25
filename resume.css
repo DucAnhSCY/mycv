@@ -1,0 +1,183 @@
+/* The website stays visual; this independent layout is the printable CV. */
+.resume-document {
+  display: none;
+}
+
+@media print {
+  @page {
+    size: A4;
+    margin: 12mm;
+  }
+
+  :root {
+    color-scheme: light;
+  }
+
+  html,
+  body {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    color: #202820;
+  }
+
+  body > :not(.resume-document) {
+    display: none !important;
+  }
+
+  .resume-document,
+  .resume-document * {
+    box-sizing: border-box;
+    animation: none !important;
+    transition: none !important;
+  }
+
+  .resume-document {
+    display: block;
+    width: 100%;
+    max-width: 186mm;
+    margin: 0 auto;
+    padding: 0;
+    color: #202820;
+    background: #fff;
+    font:
+      10.5pt/1.35 Arial,
+      Helvetica,
+      sans-serif;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .resume-document h1,
+  .resume-document h2,
+  .resume-document h3,
+  .resume-document p,
+  .resume-document dl,
+  .resume-document dd {
+    margin: 0;
+  }
+
+  .resume-document a {
+    color: #254c36;
+    text-decoration: none;
+  }
+
+  .resume-document a::after {
+    content: none !important;
+  }
+
+  .resume-header {
+    padding-bottom: 2.5mm;
+    border-bottom: 1.5pt solid #254c36;
+  }
+
+  .resume-header h1 {
+    font-size: 26pt;
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -0.4pt;
+  }
+
+  .resume-header .resume-role {
+    margin-top: 1.5mm;
+    margin-bottom: 2.2mm;
+    color: #254c36;
+    font-size: 10.5pt;
+    font-weight: 700;
+  }
+
+  .resume-header .resume-contact {
+    margin-top: 0.8mm;
+    font-size: 9.5pt;
+    line-height: 1.4;
+  }
+
+  .resume-contact span {
+    margin: 0 1.5mm;
+    color: #68746b;
+  }
+
+  .resume-section {
+    margin-top: 3.7mm;
+  }
+
+  .resume-section h2 {
+    margin-bottom: 1.6mm;
+    padding-bottom: 0.8mm;
+    border-bottom: 0.5pt solid #c3cdc5;
+    color: #254c36;
+    font-size: 10.5pt;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0.7pt;
+    text-transform: uppercase;
+    break-after: avoid;
+  }
+
+  .resume-entry-heading {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 3mm;
+    break-after: avoid;
+  }
+
+  .resume-entry-heading h3 {
+    font-size: 10.5pt;
+    font-weight: 700;
+    line-height: 1.35;
+  }
+
+  .resume-entry-heading h3 span {
+    font-weight: 400;
+  }
+
+  .resume-entry-heading .resume-date {
+    flex-shrink: 0;
+    color: #4d584f;
+    font-size: 9pt;
+    white-space: nowrap;
+  }
+
+  .resume-bullets {
+    margin: 1.5mm 0 0;
+    padding-left: 4mm;
+    list-style: disc;
+  }
+
+  .resume-bullets li + li {
+    margin-top: 1.3mm;
+  }
+
+  .resume-entry {
+    break-inside: avoid;
+  }
+
+  .resume-entry + .resume-entry {
+    margin-top: 2mm;
+  }
+
+  .resume-entry > p,
+  .resume-education-detail {
+    margin-top: 0.6mm !important;
+  }
+
+  .resume-skills > div + div {
+    margin-top: 1mm;
+  }
+
+  .resume-skills dt,
+  .resume-skills dd {
+    display: inline;
+  }
+
+  .resume-skills dt {
+    margin-right: 1mm;
+    font-weight: 700;
+  }
+
+  .resume-language {
+    margin-top: 1mm !important;
+  }
+}

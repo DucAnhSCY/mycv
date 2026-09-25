@@ -1,0 +1,11 @@
+{
+  "name": "phung-duc-anh-portfolio",
+  "private": true,
+  "scripts": {
+    "export:cv": "node scripts/export-cv.cjs"
+  },
+  "devDependencies": {
+    "pdf-lib": "1.17.1",
+    "playwright": "1.62.1"
+  }
+}

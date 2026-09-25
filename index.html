@@ -27,6 +27,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="resume.css" />
     <script src="script.js" defer></script>
   </head>
   <body>
@@ -115,16 +116,19 @@
               >Explore my work
               <svg class="icon" aria-hidden="true"><use href="#i-right" /></svg
             ></a>
-            <button
-              class="button button-outline print-button"
-              id="printResume"
-              type="button"
+            <a
+              class="button button-outline"
+              id="downloadResume"
+              href="assets/phung-duc-anh-cv.pdf"
+              download="Phung-Duc-Anh-CV.pdf"
+              type="application/pdf"
+              aria-label="Download CV (one-page PDF)"
             >
-              Save CV
+              Download CV
               <svg class="icon" aria-hidden="true">
                 <use href="#i-download" />
               </svg>
-            </button>
+            </a>
           </div>
           <div class="hero-location">
             <span class="location-mark">↗</span> Based in Hanoi, Vietnam
@@ -813,6 +817,185 @@
         </div>
       </section>
     </main>
+    <!-- Dedicated one-page CV. Used for native printing and the PDF export. -->
+    <article class="resume-document" id="resume" aria-label="Phùng Đức Anh CV">
+      <header class="resume-header">
+        <h1>Phùng Đức Anh</h1>
+        <p class="resume-role">
+          Cybersecurity · SOC / SecOps · Backend Development
+        </p>
+        <p class="resume-contact">
+          Hanoi, Vietnam <span aria-hidden="true">|</span>
+          <a href="tel:0393552209">0393 552 209</a>
+          <span aria-hidden="true">|</span>
+          <a href="mailto:phungducanh2k5@email.com">phungducanh2k5@email.com</a>
+        </p>
+        <p class="resume-contact">
+          <a href="https://github.com/DucAnhSCY">github.com/DucAnhSCY</a>
+          <span aria-hidden="true">|</span>
+          <a
+            href="https://www.linkedin.com/in/%C4%91%E1%BB%A9c-anh-ph%C3%B9ng-bab223359/"
+            >LinkedIn: Đức Anh Phùng</a
+          >
+          <span aria-hidden="true">|</span>
+          <a href="https://ducanhscy.github.io/mycv/"
+            >ducanhscy.github.io/mycv</a
+          >
+        </p>
+      </header>
+
+      <section class="resume-section" aria-labelledby="resume-profile">
+        <h2 id="resume-profile">Profile</h2>
+        <p>
+          Information Technology student with four months of security internship
+          experience, focused on SOC monitoring, malware behavior analysis and
+          AIOps/SecOps. Seeking opportunities in cybersecurity or backend
+          development.
+        </p>
+      </section>
+
+      <section class="resume-section" aria-labelledby="resume-experience">
+        <h2 id="resume-experience">Experience</h2>
+        <div class="resume-entry-heading">
+          <h3>Security Intern <span>| CMC Cyber Security</span></h3>
+          <p class="resume-date">2024 - 2025 · 4 months</p>
+        </div>
+        <ul class="resume-bullets">
+          <li>
+            Researched Windows/Linux malware behavior and detection through
+            logs, processes and services; studied security monitoring, network
+            anomaly detection and incident response workflows.
+          </li>
+          <li>
+            Contributed the
+            <strong>Process &amp; Memory Monitoring (PMM)</strong> module to
+            <a href="https://github.com/zyond26/WindowsBehaviorMonitor"
+              ><strong>WindowsBehaviorMonitor</strong></a
+            >, a company-assigned team research project using
+            <strong>C++17 and Windows APIs</strong>.
+          </li>
+          <li>
+            Enumerated processes, tracked PID with creation time to handle PID
+            reuse, and inspected memory to flag private RWX regions as potential
+            process-injection indicators.
+          </li>
+        </ul>
+      </section>
+
+      <section class="resume-section" aria-labelledby="resume-projects">
+        <h2 id="resume-projects">Projects</h2>
+        <div class="resume-entry">
+          <div class="resume-entry-heading">
+            <h3>
+              <a href="https://github.com/DucAnhSCY/aiops-platform.git"
+                >AIOps Platform</a
+              >
+              <span>| Full-Stack Security Engineer</span>
+            </h3>
+            <p class="resume-date">2025</p>
+          </div>
+          <p>
+            AI-powered log collection, anomaly detection and automated security
+            alerts. <strong>Python, Docker, AIOps/SecOps.</strong>
+          </p>
+        </div>
+        <div class="resume-entry">
+          <div class="resume-entry-heading">
+            <h3>
+              <a href="https://github.com/DucAnhSCY/CinemaProject"
+                >Cinema Project</a
+              >
+              <span>| Backend Developer</span>
+            </h3>
+            <p class="resume-date">2024 - 2025</p>
+          </div>
+          <p>
+            Designed databases and RESTful APIs for a movie ticket booking
+            website, focusing on performance and security.
+          </p>
+        </div>
+        <div class="resume-entry">
+          <div class="resume-entry-heading">
+            <h3>
+              <a href="https://github.com/junirst/match3">Match3 Game</a>
+              <span>| Backend Developer</span>
+            </h3>
+            <p class="resume-date">2024 - 2025</p>
+          </div>
+          <p>
+            Built game logic APIs and player data management for a Flutter
+            mobile game; worked on server optimization.
+          </p>
+        </div>
+        <div class="resume-entry">
+          <div class="resume-entry-heading">
+            <h3>
+              <a
+                href="https://drive.google.com/file/d/1NgOeDA4dGwvMhMbulhux89qzG0QtROwOL/view?usp=drive_link"
+                >Fruit Recognition</a
+              >
+              <span>| ML Researcher</span>
+            </h3>
+            <p class="resume-date">2023 - 2024</p>
+          </div>
+          <p>
+            Researched fruit recognition through deep learning, computer vision,
+            image processing and data analysis.
+          </p>
+        </div>
+      </section>
+
+      <section class="resume-section" aria-labelledby="resume-skills">
+        <h2 id="resume-skills">Technical skills</h2>
+        <dl class="resume-skills">
+          <div>
+            <dt>Security:</dt>
+            <dd>
+              Security monitoring, log analysis, basic malware analysis,
+              incident response, network anomaly detection, AIOps/SecOps.
+            </dd>
+          </div>
+          <div>
+            <dt>Programming:</dt>
+            <dd>
+              Python, C/C++, C#, Java, SQL Server, RESTful APIs, Windows API.
+            </dd>
+          </div>
+          <div>
+            <dt>Systems &amp; tools:</dt>
+            <dd>Windows internals, Linux, TCP/IP, Git/GitHub, Docker.</dd>
+          </div>
+        </dl>
+      </section>
+
+      <section class="resume-section" aria-labelledby="resume-education">
+        <h2 id="resume-education">Education</h2>
+        <div class="resume-entry-heading">
+          <h3>
+            CMC University <span>| Faculty of Information Technology</span>
+          </h3>
+          <p class="resume-date">2023 - 2026</p>
+        </div>
+        <p class="resume-education-detail">
+          <strong>GPA: 3.18 / 4.00.</strong> Coursework: computer networks,
+          operating systems, data structures and application security.
+        </p>
+      </section>
+
+      <section class="resume-section" aria-labelledby="resume-credentials">
+        <h2 id="resume-credentials">Certification &amp; languages</h2>
+        <p>
+          <a href="https://www.credly.com/go/j8mla7KU"
+            ><strong>Google Cybersecurity Professional Certificate</strong></a
+          >
+          · Coursera &amp; Google · June 10, 2026
+        </p>
+        <p class="resume-language">
+          <strong>English: CEFR B2.</strong> Technical documentation, report
+          writing and professional collaboration.
+        </p>
+      </section>
+    </article>
     <footer class="footer container">
       <a class="wordmark" href="#hero" aria-label="Back to top"
         >da<span class="accent">.</span></a
